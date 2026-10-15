@@ -631,7 +631,7 @@ export default function BMTRekapDetailView({ data, filterType, onBack, setExport
               }
             },
           })
-          startY = doc.lastAutoTable.finalY + 12
+          startY = (doc as any).lastAutoTable.finalY + 12
           if (startY > 270) {
             doc.addPage()
             startY = 20
